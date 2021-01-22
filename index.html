@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Tree View</h2>
+
+<ul id="myUL">
+  <li><span class="caret"><input type="checkbox" id="selectAll" value="all" >All</span>
+    <ul class="nested">
+      <li><span class="caret"><input type="checkbox" value="Resources" id="parent">Resources</span>
+        <ul class="nested">
+          <li><span class="caret"><input class="child" type="checkbox" value="rqm" id="childp1">rmq</span>
+            <ul class="nested">
+              <li><span class="caret"><input class="" type="checkbox" value="queue" id="subchild1">queue</span>
+                <ul class="nested">
+                <li><input type="checkbox" value="create" id="leavechild1">create</li>
+                <li><input type="checkbox" value="progress" id="leavechild2">progress</li>
+                <li><input type="checkbox" value="add-header" id="leavechild3">add-header</li>
+                </ul>
+              </li>
+              <li><span class="caret"><input type="checkbox" value="test" id="subchild2">test</span>
+                <ul class="nested">
+                <li><input type="checkbox" value="index" id="leavechild4">index</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="caret"><input class="child" type="checkbox" value="core" id="childp2">core</span>
+            <ul class="nested">
+              <li><span class="caret"><input type="checkbox" id="subchildp2">test</span>
+                <ul class="nested">
+                <li><input type="checkbox" value="mongo" id="leavep21">mongo</li>
+                <li><input type="checkbox" value="index" id="leavep22">index</li>
+                <li><input type="checkbox" value="react-test" id="leavep23">react-test</li>
+                <li><input type="checkbox" value="send-mail" id="leavep24">send-mail</li>
+                <li><input type="checkbox" value="download,UninstallClients" id="leavep25">download,UninstallClients</li>
+                </ul>
+              </li>
+              <li><span class="caret"><input type="checkbox" value="acl-grid" id="subchildp3">acl-grid</span>
+                <ul class="nested">
+                <li><input type="checkbox" id="leave26">create</li>
+                <li><input type="checkbox" id="leave27">update</li>
+                <li><input type="checkbox" id="leave28">delete</li>
+                <li><input type="checkbox" id="leave29">get</li>
+                <li><input type="checkbox" id="leave30">getRoleResource</li>
+                <li><input type="checkbox" id="leave31">getAll</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>  
+    </ul>
+  </li>
+</ul>
+<input id="btn" type="submit" value="submit" />
+<br /><br />
+<div id="divResult"></div>
+
+<!-- <div class="append-to-me"></div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
